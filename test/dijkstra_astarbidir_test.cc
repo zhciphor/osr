@@ -178,8 +178,8 @@ void run(ways const& w,
 }
 
 TEST(dijkstra_astarbidir, monaco_fwd) {
-  auto const raw_data = "test/monaco.osm.pbf";
-  auto const data_dir = "test/monaco";
+  auto const raw_data = "test/data/monaco.osm.pbf";
+  auto const data_dir = "test/data/monaco";
   auto const num_samples = 10000U;
   auto const max_cost = 2 * 3600U;
   auto constexpr dir = direction::kForward;
@@ -196,8 +196,8 @@ TEST(dijkstra_astarbidir, monaco_fwd) {
 }
 
 TEST(dijkstra_astarbidir, monaco_bwd) {
-  auto const raw_data = "test/monaco.osm.pbf";
-  auto const data_dir = "test/monaco";
+  auto const raw_data = "test/data/monaco.osm.pbf";
+  auto const data_dir = "test/data/monaco";
   auto const num_samples = 10000U;
   auto const max_cost = 2 * 3600U;
   auto constexpr dir = direction::kBackward;
@@ -214,8 +214,8 @@ TEST(dijkstra_astarbidir, monaco_bwd) {
 }
 
 TEST(dijkstra_astarbidir, hamburg) {
-  auto const raw_data = "test/hamburg.osm.pbf";
-  auto const data_dir = "test/hamburg";
+  auto const raw_data = "test/data/hamburg.osm.pbf";
+  auto const data_dir = "test/data/hamburg";
   auto const num_samples = 5000U;
   auto const max_cost = 3 * 3600U;
   auto constexpr dir = direction::kForward;
@@ -232,8 +232,8 @@ TEST(dijkstra_astarbidir, hamburg) {
 }
 
 TEST(dijkstra_astarbidir, switzerland) {
-  auto const raw_data = "test/switzerland.osm.pbf";
-  auto const data_dir = "test/switzerland";
+  auto const raw_data = "test/data/switzerland.osm.pbf";
+  auto const data_dir = "test/data/switzerland";
   auto const num_samples = 1000U;
   auto const max_cost = 5 * 3600U;
   auto constexpr dir = direction::kForward;
@@ -250,8 +250,8 @@ TEST(dijkstra_astarbidir, switzerland) {
 }
 
 TEST(dijkstra_astarbidir, DISABLED_germany) {
-  auto const raw_data = "test/germany.osm.pbf";
-  auto const data_dir = "test/germany";
+  auto const raw_data = "test/data/germany.osm.pbf";
+  auto const data_dir = "test/data/germany";
   constexpr auto const num_samples = 50U;
   constexpr auto const max_cost = 12 * 3600U;
   auto constexpr dir = direction::kForward;
